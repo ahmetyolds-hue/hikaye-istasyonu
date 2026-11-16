@@ -103,6 +103,9 @@
     {x:1325, y:792, count:7, period:2.6, drift:-183, rise:-59, bend:-72, lift:-16, gradient:'steam-wheel'},
     {x:1228, y:744, count:6, period:2.8, drift:-135, rise:-38, bend:-48, lift:-12, gradient:'steam-wheel'}
   ];
+  var mobileScene = window.matchMedia('(max-width: 768px)');
+  function renderSteam() {
+  document.getElementById('steam-sources').textContent = '';
   emitters.forEach(function(source) {
     var parent = svg('g', {transform:'translate('+source.x+' '+source.y+')'}, document.getElementById('steam-sources'));
     var chimney = source.gradient === 'steam-light';
@@ -120,9 +123,22 @@
         values['--turn'] = (18 * Math.cos(i * 2.1)) + 'deg';
       }
       Object.entries(values).forEach(function(entry){ wisp.style.setProperty(entry[0], entry[1]); });
-      svg('use', {href:chimney ? '#chimney-wisp' : '#steam-wisp',fill:'url(#'+source.gradient+')',transform:'scale('+(i%2 ? -1 : 1)+' 1)'}, wisp);
+      var shape = chimney ? 'chimney-wisp' : 'steam-wisp';
+      var attributes = {fill:'url(#'+source.gradient+')',transform:'scale('+(i%2 ? -1 : 1)+' 1)'};
+      if (mobileScene.matches) {
+        var inline = svg('g', attributes, wisp);
+        Array.prototype.forEach.call(document.getElementById(shape).children, function(ellipse) {
+          inline.appendChild(ellipse.cloneNode(true));
+        });
+      } else {
+        attributes.href = '#' + shape;
+        svg('use', attributes, wisp);
+      }
     }
   });
+  }
+  renderSteam();
+  mobileScene.addEventListener('change', renderSteam);
   var stars=document.getElementById('stars');
   [[943,210,5],[1060,390,6],[1152,385,7],[1126,257,5],[1240,222,6],[1265,352,5],[1106,372,4],[984,396,4],[1313,206,5],[1370,205,4],[907,355,3]].forEach(function(s,i){
     var g=svg('g',{'class':'star',style:'--duration:'+(2.8+(i%5)*.38)+'s;--delay:-'+(i*.71)+'s'},stars);
