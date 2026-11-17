@@ -468,6 +468,8 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
 }
 .arsiv-kart h3{font-size:1.5rem;color:var(--krem);margin-bottom:.7rem}
 .arsiv-kart p{font-size:.95rem;color:var(--metin-soluk)}
+.arsiv-davetiye{display:block;width:100%;max-width:260px;margin:1.25rem 0 .5rem}
+.arsiv-davetiye img{display:block;width:100%;height:auto;border-radius:4px}
 .not,.arsiv-kart .not{font-size:.82rem;color:#9E9382;margin-top:1rem;line-height:1.55}
 
 .kategoriler{
