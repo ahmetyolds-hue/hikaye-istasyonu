@@ -577,6 +577,7 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
 }
 .adimlar h3{font-size:1.02rem;color:var(--krem);margin-bottom:.4rem}
 .adimlar p{font-size:.86rem;color:var(--metin-soluk)}
+.adimlar .belge-link{max-width:100%;margin-top:.65rem;font-size:.85rem;line-height:1.45;justify-content:center;overflow-wrap:anywhere}
 
 .cta-kutu{text-align:center}
 .cta-not{color:var(--metin-soluk);font-size:.92rem;margin-bottom:1.2rem}
