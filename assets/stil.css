@@ -624,6 +624,11 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
 .belge-link{text-decoration:underline;text-underline-offset:.2em}
 .alt-iletisim h2{font-size:1.05rem;color:var(--altin);margin-bottom:.6rem}
 .alt-iletisim p{font-size:.88rem;color:var(--metin-soluk);margin-bottom:.3rem}
+.alt-iletisim .iletisim-posta{color:var(--krem);overflow-wrap:anywhere;text-decoration:none}
+.alt-iletisim .iletisim-posta:hover{text-decoration:underline;color:var(--altin-acik)}
+.alt-iletisim .iletisim-instagram{display:inline-flex;align-items:center;gap:.65rem;min-height:44px;color:var(--altin-acik);text-decoration:none;font-size:.88rem;max-width:100%;overflow-wrap:anywhere}
+.alt-iletisim .iletisim-instagram svg{flex:none}
+.alt-iletisim .iletisim-instagram:hover{color:var(--krem)}
 .alt-iletisim .bos span{color:#8C8272;font-style:italic}
 .alt-alt{
   margin-top:2.4rem;padding-top:1.2rem;
