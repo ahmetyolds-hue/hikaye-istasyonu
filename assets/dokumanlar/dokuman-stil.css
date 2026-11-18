@@ -21,3 +21,6 @@ h2{margin:8mm 0 3mm;font:700 18pt/1.15 'Playfair Display',Georgia,serif;color:va
 .davet-aciklama{margin-top:1rem;padding:1.25rem;background:var(--lacivert);border:1px solid var(--altin);border-radius:8px}
 .davet-aciklama h1,.davet-aciklama h2{color:var(--krem)}
 @media print{body{background:#fff}.sayfa,.davet{margin:0}.sayfa{page-break-after:always}.davet-bilet{width:100%;margin:0}.davet-bilet nav,.davet-aciklama{display:none}.davet-gorsel{max-height:270mm;width:auto;max-width:100%;margin:auto}}
+
+@media screen{.siteye-don{display:inline-flex;align-items:center;min-height:44px;padding:.45rem .9rem;margin-bottom:1rem;border:1px solid rgba(212,175,55,.55);border-radius:8px;color:#F7E8C6;text-decoration:none;font:500 .9rem Inter,Arial,sans-serif;background:rgba(212,175,55,.07)}.siteye-don:hover{border-color:#D4AF37;background:rgba(212,175,55,.16)}.siteye-don:focus-visible{outline:2px solid #E8CB72;outline-offset:3px}.davet-bilet .siteye-don{margin-bottom:0}}
+@media print{.siteye-don{display:none}}
