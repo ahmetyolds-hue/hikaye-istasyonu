@@ -624,11 +624,11 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
 .belge-link{text-decoration:underline;text-underline-offset:.2em}
 .alt-iletisim h2{font-size:1.05rem;color:var(--altin);margin-bottom:.6rem}
 .alt-iletisim p{font-size:.88rem;color:var(--metin-soluk);margin-bottom:.3rem}
-.alt-iletisim .iletisim-posta{color:var(--krem);overflow-wrap:anywhere;text-decoration:none}
-.alt-iletisim .iletisim-posta:hover{text-decoration:underline;color:var(--altin-acik)}
-.alt-iletisim .iletisim-instagram{display:inline-flex;align-items:center;gap:.65rem;min-height:44px;color:var(--altin-acik);text-decoration:none;font-size:.88rem;max-width:100%;overflow-wrap:anywhere}
-.alt-iletisim .iletisim-instagram svg{flex:none}
-.alt-iletisim .iletisim-instagram:hover{color:var(--krem)}
+.alt-iletisim .iletisim-aciklama{font-size:.85rem;color:rgba(247,232,198,.68);margin-bottom:12px}
+.alt-iletisim .iletisim-posta,.alt-iletisim .iletisim-instagram{display:flex;align-items:center;gap:.65rem;width:fit-content;max-width:100%;min-height:44px;padding:8px 14px;border:1px solid rgba(212,175,55,.28);border-radius:10px;background:rgba(212,175,55,.06);color:var(--krem);font-size:.88rem;text-decoration:none;overflow-wrap:anywhere;transition:border-color .2s ease,color .2s ease}
+.alt-iletisim .iletisim-posta{margin-bottom:8px}
+.alt-iletisim .iletisim-posta svg,.alt-iletisim .iletisim-instagram svg{flex:none;color:#D4AF37}
+.alt-iletisim .iletisim-posta:hover,.alt-iletisim .iletisim-instagram:hover{border-color:#D4AF37;color:#F7E8C6}
 .alt-iletisim .bos span{color:#8C8272;font-style:italic}
 .alt-alt{
   margin-top:2.4rem;padding-top:1.2rem;
@@ -795,4 +795,6 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
   .puff{display:none}
   .star{opacity:.35}
 }
+
+
 
