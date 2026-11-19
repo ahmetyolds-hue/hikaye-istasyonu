@@ -633,7 +633,7 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
 .alt-alt{
   margin-top:2.4rem;padding-top:1.2rem;
   border-top:1px solid rgba(255,255,255,.07);
-  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;
   font-size:.8rem;color:#8C8272;
 }
 .alt-alt a{color:var(--altin);text-decoration:underline;text-underline-offset:3px}
@@ -708,7 +708,7 @@ a[aria-disabled="true"]{pointer-events:none;opacity:.75}
   .bolum-bas{margin-bottom:2rem}
   .adimlar{grid-template-columns:1fr 1fr;gap:.75rem}
   .alt-ust{grid-template-columns:1fr;gap:1.6rem}
-  .alt-alt{flex-direction:column;gap:.4rem}
+  .alt-alt{flex-direction:column;align-items:flex-start;gap:.4rem}
   .kaydir,.hero-sis.sis-2{display:none}
 }
 
